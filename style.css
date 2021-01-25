@@ -1,0 +1,141 @@
+body, html {
+  height: 200%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#bg {
+  /* The image used */
+   background-image: url("images/Background.svg"); 
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+}
+
+
+.load{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+#dot{
+    width: 0px;
+    height: 5px;
+    position: absolute;    
+    background: forestgreen;
+    overflow: hidden;
+}
+
+#name {
+  padding-top: 7rem;
+  padding-left: 4rem;
+}
+
+.bigText {
+  font-size: 8vw;
+  font-weight: bold;
+}
+
+#position {
+  padding-top: 2rem;
+  scale: 0.5;
+}
+
+#certificatesHeader {
+  padding-top: 5rem;
+  padding-left: 4rem;
+}
+
+#projectsHeader {
+  padding-top: 5rem;
+  padding-right: 4rem;
+}
+
+#test {
+  float: right;
+}
+
+#newRow{
+  margin-top: 2rem;
+}
+
+.certificateImage{
+  height: 250px;
+  width: 200px;
+}
+
+#phoneSimulator{
+  display: block;
+  margin: auto;
+  scale: 0.8;
+}
+
+#mailzySimulator{
+  display: block;
+  margin: auto;
+  scale: 0.8;
+  float: right;
+}
+
+#siteSimulator{
+  display: block;
+  margin: auto;
+  height: 340%;
+  width: 100%;
+  margin-left: 4%;
+  padding-right: 4%;
+}
+
+#pageName{
+  text-align: center;
+}
+#pageText{
+  text-align: center;
+}
+
+area{
+  cursor: pointer;
+}
+
+div.polaroid {
+  max-width: 200px;
+  min-width: 100px;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+
+
+
+
+
+/* Media */
+
+@media screen and (max-width: 768px){
+  #bg {
+    /* The image used */
+     background-image: url("images/BackgroundMobile.svg"); 
+    
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+     background-position: center; 
+     background-repeat: no-repeat; 
+     background-size: cover; 
+  }
+}
