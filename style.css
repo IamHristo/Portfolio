@@ -28,6 +28,21 @@ html {
     padding-left: 4rem;
 }
 
+#LearnMoreAboutMe {
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+
+#LearnMoreAboutMyProjects {
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+
+#leftSlide {
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+
 .bigText {
     font-size: 8vw;
     font-weight: bold;
@@ -70,7 +85,6 @@ html {
 #mailzySimulator {
     display: block;
     margin: auto;
-    scale: 0.8;
     float: right;
 }
 
@@ -119,7 +133,10 @@ div.container {
         padding-left: 4rem;
     }
     .certificates {
-        padding-top: 1rem;
+        padding: 1rem;
+    }
+    #resume {
+        height: 500px;
     }
 }
 
@@ -128,5 +145,25 @@ div.container {
 }
 
 .certificates {
-    padding-top: 4rem;
+    padding: 4rem;
+}
+
+#contactForm {
+    padding: 4rem;
+}
+
+#contactMe {
+    padding: 4rem;
+}
+
+#letsTalk {
+    padding: 4rem;
+}
+
+.customInput {
+    background-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.customSubmit {
+    background-color: #3bb49c !important;
 }

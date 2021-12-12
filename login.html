@@ -30,11 +30,9 @@
                         <a class="nav-link" href="Projects.html">Projects <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="contactMe.html">Let's talk<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Let's talk<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modalLoginForm">Sing in</button>
-
                 <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -49,85 +47,111 @@
 
         <div class="col-md-12 m-0 p-0">
             <div class="row">
-                <div class="col-8" id="name">
-                    <h1 class="bigText">Hello</h2>
-                        <h1 class="bigText">I am</h2>
-                            <h1 class="bigText">Hristo Ivanov</h1>
-                            <h2>.Net Developer</h2>
-                </div>
-
-                <div class="col-4" id="position" onclick="flipDiv()">
-                    <img class="img-fluid" src="images/logo.png " alt="Programer Icon">
+                <div class="col-8" id="letsTalk">
+                    <h1 class="bigText">Let's</h2>
+                        <h1 class="bigText">Talk</h2>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-12" id="certificatesHeader">
-                <h1 class="bigText">Certificates</h2>
+            <div class="col-md-12" id="contactMe">
+                <h1 class="bigText">Contant me</h2>
             </div>
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/HackeRank.png " alt="Programer " style="width:100% ">
-                    <div class="container">
-                        <p>HackerRank</p>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-12">
+                <!--Section: Contact v.2-->
+                <section class="mb-4">
+                    <div class="row" id="contactForm">
+                        <!--Grid column-->
+                        <div class="col-md-9 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Adastra.png " alt="Adastra " style="width:100% ">
-                    <div class="container">
-                        <p>Adastra</p>
-                    </div>
-                </div>
-            </div>
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="senderName" name="name" class="form-control customInput">
+                                            <label for="name" class="">Your name</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Softuni.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="email" name="email" class="form-control customInput">
+                                            <label for="email" class="">Your email</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/System and Network Compromising.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
+                                </div>
+                                <!--Grid row-->
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/HackathonVarna.jpg " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>Smart Solutions</p>
-                    </div>
-                </div>
-            </div>
+                                <!--Grid row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="subject" name="subject" class="form-control customInput">
+                                            <label for="subject" class="">Subject</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Grid row-->
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Open Source Intelligence.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
+                                <!--Grid row-->
+                                <div class="row">
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Compromising Platforms.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+
+                                        <div class="md-form">
+                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea customInput"></textarea>
+                                            <label for="message">Your message</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--Grid row-->
+
+                            </form>
+
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-primary customSubmit" onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-3 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>Sofia, CA 94126, BG</p>
+                                </li>
+
+                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>+ 01 234 567 89</p>
+                                </li>
+
+                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>try@hack.me</p>
+                                </li>
+
+                                <!--Google map-->
+                                <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sofia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" frameborder="0"><a href="https://www.gps.ie/sport-gps/">swimming watch</a></iframe></div>
+
+                                <!--Google Maps-->
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
                     </div>
-                </div>
+
+                </section>
+                <!--Section: Contact v.2-->
             </div>
         </div>
 
@@ -255,26 +279,6 @@
         <!--END PhoneSimulator Row -->
 
 
-        <div id="regform" class="modal">
-            <form class="modal-content animate" action="index.html">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('regform').style.display='none'" class="close1" title="Close">&times;</span>
-                    <img src="img/logo1.png" alt="Avatar" class="avatar">
-                </div>
-                <div class="container">
-                    <label for="uname"><b class="login">Потребителско име</b></label>
-                    <input type="text" placeholder="Въведете потребителско име" name="uname" required>
-                    <label for="email"><b class="login">Имейл адрес</b></label>
-                    <input type="text" placeholder="Въведете валиден имейл адрес" name="email" required>
-                    <label for="psw"><b class="login">Парола</b></label>
-                    <input type="password" placeholder="Въведете парола" name="psw" autocomplete="new-password" required>
-                    <label for="pswr"><b class="login">Повторете паролата</b></label>
-                    <input type="password" placeholder="Въведете парола" name="pswr" autocomplete="new-password" required>
-                    <button type="submit">Регистрация</button>
-                    <button onclick="showRegHide()" id="no" type="button" formnovalidate>Отказ</button>
-                </div>
-            </form>
-        </div>
 
     </div>
 
@@ -293,7 +297,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" defer>
     </script>
     <!-- Personal JavaScript -->
-    <script src="js/main.js" defer></script>
+    <script src="js/contactMe.js" defer></script>
     <!-- Optional JavaScript -->
 </body>
 
