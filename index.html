@@ -33,7 +33,7 @@
                         <a class="nav-link" href="contactMe.html">Let's talk<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#modalLoginForm">Sing in</button>
+                <button id="SingInProfileButton" class="btn btn-outline-success my-2 my-sm-0" onclick="showLogin()">Sing in</button>
 
                 <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -46,93 +46,102 @@
             </div>
         </div>
 
+        <!-- particles.js container -->
+        <div id="particles-js">
+            <div class="container">
+                <div class="alert" role="alert">
+                    <strong>Login successfully!</strong>
 
-        <div class="col-md-12 m-0 p-0">
+                </div>
+            </div>
+
+
+            <div class="col-md-12 m-0 p-0">
+                <div class="row">
+                    <div class="col-8" id="name">
+                        <h1 class="bigText">Hello</h2>
+                            <h1 class="bigText">I am</h2>
+                                <h1 class="bigText">Hristo Ivanov</h1>
+                                <h2>.Net Developer</h2>
+                    </div>
+
+                    <div class="col-4" id="position" onclick="flipDiv()">
+                        <img class="img-fluid" src="images/logo.png " alt="Programer Icon">
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-8" id="name">
-                    <h1 class="bigText">Hello</h2>
-                        <h1 class="bigText">I am</h2>
-                            <h1 class="bigText">Hristo Ivanov</h1>
-                            <h2>.Net Developer</h2>
+                <div class="col-md-12" id="certificatesHeader">
+                    <h1 class="bigText">Certificates</h2>
                 </div>
 
-                <div class="col-4" id="position" onclick="flipDiv()">
-                    <img class="img-fluid" src="images/logo.png " alt="Programer Icon">
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/HackeRank.png " alt="Programer " style="width:100% ">
+                        <div class="container">
+                            <p>HackerRank</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-12" id="certificatesHeader">
-                <h1 class="bigText">Certificates</h2>
-            </div>
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/Adastra.png " alt="Adastra " style="width:100% ">
+                        <div class="container">
+                            <p>Adastra</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/HackeRank.png " alt="Programer " style="width:100% ">
-                    <div class="container">
-                        <p>HackerRank</p>
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/Softuni.png " alt="SoftUni " style="width:100% ">
+                        <div class="container ">
+                            <p>SoftUni</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/System and Network Compromising.png " alt="SoftUni " style="width:100% ">
+                        <div class="container ">
+                            <p>SoftUni</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/HackathonVarna.jpg " alt="SoftUni " style="width:100% ">
+                        <div class="container ">
+                            <p>Smart Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/Open Source Intelligence.png " alt="SoftUni " style="width:100% ">
+                        <div class="container ">
+                            <p>SoftUni</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 certificates">
+                    <div class="polaroid ">
+                        <img class="certificateImage " src="images/Compromising Platforms.png " alt="SoftUni " style="width:100% ">
+                        <div class="container ">
+                            <p>SoftUni</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Adastra.png " alt="Adastra " style="width:100% ">
-                    <div class="container">
-                        <p>Adastra</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Softuni.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/System and Network Compromising.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/HackathonVarna.jpg " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>Smart Solutions</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Open Source Intelligence.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 certificates">
-                <div class="polaroid ">
-                    <img class="certificateImage " src="images/Compromising Platforms.png " alt="SoftUni " style="width:100% ">
-                    <div class="container ">
-                        <p>SoftUni</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PhoneSimulator Row-->
-        <!-- <div class="row " id="newRow ">
+            <!-- PhoneSimulator Row-->
+            <!-- <div class="row " id="newRow ">
 
             <div class="col-md-12 " id="projectsHeader ">
                 <h1 id="test " class="bigText ">Projects</h2>
@@ -174,10 +183,10 @@
             </div>
 
         </div> -->
-        <!--END PhoneSimulator Row-->
+            <!--END PhoneSimulator Row-->
 
-        <!--MailzySimulator Row-->
-        <!-- <div class="row " id="newRow ">
+            <!--MailzySimulator Row-->
+            <!-- <div class="row " id="newRow ">
 
 
             <div class="col-md-4 " id="mailzySimulatorText ">
@@ -216,7 +225,7 @@
                   <area alt="New email " title="New email " coords="13,135,54,164 " 
                   shape="rect " onclick="changeScreen( 'mailzyNewEmailScreen', 'mailzySimulator') ">
                   -->
-        <!-- <area alt="Logout " title="Logout " coords="14,296,55,329 " 
+            <!-- <area alt="Logout " title="Logout " coords="14,296,55,329 " 
                   shape="rect " onclick="changeScreen( 'mailzyLoginScreen', 'mailzySimulator') ">
               </map>
 
@@ -225,10 +234,10 @@
 
 
         </div> -->
-        <!--END MailzySimulator Row-->
+            <!--END MailzySimulator Row-->
 
-        <!--SiteSimulator Row-->
-        <!-- <div class="row " id="newRow ">
+            <!--SiteSimulator Row-->
+            <!-- <div class="row " id="newRow ">
             <div class="col-md-8 ">
 
 
@@ -252,49 +261,87 @@
             </div>
 
         </div> -->
-        <!--END PhoneSimulator Row -->
+            <!--END PhoneSimulator Row -->
 
 
-        <div id="regform" class="modal">
-            <form class="modal-content animate" action="index.html">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('regform').style.display='none'" class="close1" title="Close">&times;</span>
-                    <img src="img/logo1.png" alt="Avatar" class="avatar">
-                </div>
-                <div class="container">
-                    <label for="uname"><b class="login">Потребителско име</b></label>
-                    <input type="text" placeholder="Въведете потребителско име" name="uname" required>
-                    <label for="email"><b class="login">Имейл адрес</b></label>
-                    <input type="text" placeholder="Въведете валиден имейл адрес" name="email" required>
-                    <label for="psw"><b class="login">Парола</b></label>
-                    <input type="password" placeholder="Въведете парола" name="psw" autocomplete="new-password" required>
-                    <label for="pswr"><b class="login">Повторете паролата</b></label>
-                    <input type="password" placeholder="Въведете парола" name="pswr" autocomplete="new-password" required>
-                    <button type="submit">Регистрация</button>
-                    <button onclick="showRegHide()" id="no" type="button" formnovalidate>Отказ</button>
-                </div>
-            </form>
+            <div id="id01">
+                <form class="modal-content animate" id="login-form" action="javascript:;" onsubmit="showLoginHide()">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close">&times;</span>
+                    </div>
+
+                    <div class="container">
+                        <div class="md-form mb-5">
+                            <label for="uname"><b class="login">User name</b></label>
+                            <input type="text" class="form-control input-sm" placeholder="User name" name="uname" required>
+                        </div>
+
+                        <div class="md-form mb-5">
+
+                            <label for="psw"><b class="login">Password</b></label>
+                            <input type="password" placeholder="Password" name="psw" autocomplete="new-password" class="form-control input-sm" required>
+                        </div>
+
+                        <button class="btn btn-outline-success my-2 my-sm-0" onclick="showAlert()" type="submit">Login</button>
+                        <label class="login">
+                   <input type="checkbox" checked="checked" name="remember"> Remember me
+                     </label>
+                    </div>
+                    <div class="container">
+                        <span class="psw login"><a onclick="showReg()" href="#">Register</a></span>
+                        <span class="psw login"><a onclick="pswForget()" href="#">Forgot password</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <div id="id02">
+                <form class="modal-content animate" id="login-form" action="javascript:;" onsubmit="showProfileHide()">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close">&times;</span>
+                    </div>
+
+                    <div class="container">
+                        <div class="md-form mb-5">
+                            <label for="uname"><b class="login">Change user name</b></label>
+                            <input type="text" class="form-control input-sm" placeholder="Change user name" name="uname" required>
+                        </div>
+
+                        <div class="md-form mb-5">
+
+                            <label for="psw"><b class="login">Change password</b></label>
+                            <input type="password" placeholder="Change password" name="psw" autocomplete="new-password" class="form-control input-sm" required>
+                        </div>
+
+                        <button class="btn btn-outline-success my-2 my-sm-0" onclick="showAlert()" type="submit">Save</button>
+                    </div>
+                    <div class="container">
+                    </div>
+                </form>
+            </div>
+
         </div>
 
-    </div>
 
 
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="js/motus.js" defer></script>
+        <!-- jQuery first, then Bootstrap JS -->
+        <!-- CSS -->
+        <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" defer>
+        <!-- jQuery and JS bundle w/ Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer>
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous " defer>
+        </script>
+        <!-- Personal JavaScript -->
+        <script src="js/main.js " defer></script>
+        <!-- Optional JavaScript -->
+        <script src="js/particles.js "></script>
+        <script src="js/jquery-3.2.1.min.js "></script>
+        <script src="js/bootstrap.min.js "></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script src="js/motus.js" defer></script>
-    <!-- jQuery first, then Bootstrap JS -->
-    <!-- CSS -->
-    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" defer>
-    <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer>
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" defer>
-    </script>
-    <!-- Personal JavaScript -->
-    <script src="js/main.js" defer></script>
-    <!-- Optional JavaScript -->
 </body>
 
 </html>

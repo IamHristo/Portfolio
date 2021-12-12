@@ -4,17 +4,7 @@ $(document).ready(function() {
         Motus.addAnimation(newAnimation);
         Motus.addAnimation(newAnimation1);
         Motus.addAnimation(certificatesHeaderAnimation);
-        //Motus.addAnimation(CertificateAnimation1);
-        //Motus.addAnimation(CertificateAnimation2);
-        //Motus.addAnimation(CertificateAnimation3);
         Motus.addAnimation(dotAnimation);
-        //Motus.addAnimation(projectsHeaderAnimation);
-        //Motus.addAnimation(phoneAnimation);
-        //Motus.addAnimation(phoneTextAnimation);
-        //Motus.addAnimation(phoneClickAnimation);
-        //Motus.addAnimation(mailzyAnimation);
-        //Motus.addAnimation(mailzyTextAnimation);
-        //Motus.addAnimation(LearnMoreAboutMeAnimation);
     }
 });
 
@@ -95,4 +85,70 @@ const dotAnimation = new Motus.Animation({
 function flipDiv() {
     document.getElementById("position").style.transition = "2s";
     document.getElementById("position").style.transform = "rotateY(180deg)";
+}
+
+function showLogin() {
+    var button = document.getElementById('SingInProfileButton');
+    if (button.innerText == "Sing in") {
+        var modal = document.getElementById('id01');
+        modal.style.display = 'block';
+        modal.style.opacity = '100';
+        modal.style.zIndex = '10000';
+        console.log("Show login");
+    } else {
+        var modal = document.getElementById('id02');
+        modal.style.display = 'block';
+        modal.style.opacity = '100';
+        modal.style.zIndex = '10000';
+        console.log("Show profile");
+    }
+}
+
+function HideLogin() {
+    var modal1 = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+    var button = document.getElementById('SingInProfileButton');
+    console.log("Hide login");
+    console.log(modal1.style.display);
+    console.log(modal2.style.display);
+    modal1.setAttribute('style', 'display: none !important;');
+    modal2.setAttribute('style', 'display: none !important;');
+    console.log(modal1.style.display);
+    console.log(modal2.style.display);
+    button.innerText = 'Profile';
+    //modal.setProperty(propertyName, value, priority);
+}
+
+function showLoginHide() {
+    var modal = document.getElementById('id01');
+    HideLogin();
+    var modal = document.getElementById("id01");
+    $('.alert').show();
+    setTimeout(function() { $(".alert").fadeTo(1000, 0.4).slideUp(800); }, 3000);
+    $(modal).fadeTo(1000, 0);
+}
+
+function showProfileHide() {
+    var modal = document.getElementById('id02');
+    HideLogin();
+    console.log(document.getElementsByClassName("alert")[0].innerText);
+    document.getElementsByClassName("alert")[0].innerText = "Data changed successfully!";
+    document.getElementsByClassName("alert")[0].style.opacity = "100";
+    $('.alert').show();
+    setTimeout(function() { $(".alert").fadeTo(1000, 0.4).slideUp(800); }, 3000);
+    $(modal).fadeTo(1000, 0);
+}
+
+function showAlert() {
+
+    var form = document.getElementById("login-form");
+
+    function myFunction() {
+        if (form.checkValidity()) {
+            var modal = document.getElementById("id01");
+            $('.alert').show();
+            setTimeout(function() { $(".alert").fadeTo(1000, 0.4).slideUp(800); }, 3000);
+            $(modal).fadeTo(1000, 0);
+        }
+    }
 }
