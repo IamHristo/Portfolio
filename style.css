@@ -1,25 +1,18 @@
 body,
 html {
-    height: 200%;
     margin: 0;
     overflow-x: hidden;
-}
-
-#bg {
-    /* The image used */
-    background-image: url("images/Background.svg");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url("images/Background.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
 .load {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10000;
 }
 
 #dot {
@@ -122,18 +115,18 @@ div.container {
 /* Media */
 
 @media screen and (max-width: 768px) {
-    #bg {
-        /* The image used */
-        background-image: url("images/BackgroundMobile.svg");
-        /* Full height */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    #certificatesHeader {
+        padding-left: 4rem;
+    }
+    .certificates {
+        padding-top: 1rem;
     }
 }
 
 .navbar-custom {
     background-color: rgba(255, 255, 255, 0.88);
+}
+
+.certificates {
+    padding-top: 4rem;
 }
