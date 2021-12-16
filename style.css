@@ -138,6 +138,10 @@ div.container {
     #resume {
         height: 500px;
     }
+    .carousel-item>img {
+        height: 225px;
+        max-height: 425px;
+    }
 }
 
 .navbar-custom {
@@ -294,4 +298,12 @@ span.psw {
     right: 0;
     margin: 10px;
     background-color: green;
+}
+
+.carousel-item>img {
+    max-height: 400px;
+}
+
+.carousel {
+    max-width: 600px;
 }
