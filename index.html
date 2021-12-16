@@ -14,368 +14,243 @@
 
 <body>
 
-    <div id="bg">
-        <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top">
-            <a class="navbar-brand" href="index.html">Hristo Ivanov</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="index.html">Hristo Ivanov</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Resume.html">Resume<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Projects.html">Projects <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contactMe.html">Let's talk<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <button id="SingInProfileButton" class="btn btn-outline-success my-2 my-sm-0" onclick="showLogin()">Sing
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Resume.html">Resume<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Projects.html">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contactMe.html">Let's talk<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button id="SingInProfileButton" class="btn btn-outline-success my-2 my-sm-0" onclick="showLogin()">Sing
                     in</button>
 
-                <!-- <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form> -->
-            </div>
-        </nav>
-        <div class="load">
-            <div id="dot">
+        </div>
+    </nav>
+    <div class="load">
+        <div id="dot">
+        </div>
+    </div>
+
+    <!-- particles.js container -->
+    <div id="particles-js">
+        <div class="container">
+            <div class="alert" role="alert">
+                <strong>Login successfully!</strong>
+
             </div>
         </div>
 
-        <!-- particles.js container -->
-        <div id="particles-js">
-            <div class="container">
-                <div class="alert" role="alert">
-                    <strong>Login successfully!</strong>
 
-                </div>
-            </div>
-
-
-            <div class="col-md-12 m-0 p-0">
-                <div class="row">
-                    <div class="col-8" id="name">
-                        <h1 class="bigText">Hello</h2>
-                            <h1 class="bigText">I am</h2>
-                                <h1 class="bigText">Hristo Ivanov</h1>
-                                <h2>.Net Developer</h2>
-                    </div>
-
-                    <div class="col-4" id="position" onclick="flipDiv()">
-                        <img class="img-fluid" src="images/logo.png " alt="Programer Icon">
-                    </div>
-                </div>
-            </div>
-
+        <div class="col-md-12 m-0 p-0">
             <div class="row">
-                <div class="col-md-12" id="certificatesHeader">
-                    <h1 class="bigText">Certificates</h2>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div id="carouselExampleIndicators" class="carousel slide w-50 p-3" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/HackeRank.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="images/Adastra.png" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="images/Softuni.png" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-
-
-
-
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/HackeRank.png " alt="Programer " style="width:100% ">
-                        <div class="container">
-                            <p>HackerRank</p>
-                        </div>
-                    </div>
+                <div class="col-8" id="name">
+                    <h1 class="bigText">Hello</h1>
+                    <h1 class="bigText">I am</h1>
+                    <h1 class="bigText">Hristo Ivanov</h1>
+                    <h2>.Net Developer</h2>
                 </div>
 
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/Adastra.png " alt="Adastra " style="width:100% ">
-                        <div class="container">
-                            <p>Adastra</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/Softuni.png " alt="SoftUni " style="width:100% ">
-                        <div class="container ">
-                            <p>SoftUni</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/System and Network Compromising.png " alt="SoftUni " style="width:100% ">
-                        <div class="container ">
-                            <p>SoftUni</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/HackathonVarna.jpg " alt="SoftUni " style="width:100% ">
-                        <div class="container ">
-                            <p>Smart Solutions</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/Open Source Intelligence.png " alt="SoftUni " style="width:100% ">
-                        <div class="container ">
-                            <p>SoftUni</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 certificates">
-                    <div class="polaroid ">
-                        <img class="certificateImage " src="images/Compromising Platforms.png " alt="SoftUni " style="width:100% ">
-                        <div class="container ">
-                            <p>SoftUni</p>
-                        </div>
-                    </div>
+                <div class="col-4" id="position" onclick="flipDiv()">
+                    <img class="img-fluid" src="images/logo.png " alt="Programer Icon">
                 </div>
             </div>
+        </div>
 
-            <!-- PhoneSimulator Row-->
-            <!-- <div class="row " id="newRow ">
-
-            <div class="col-md-12 " id="projectsHeader ">
-                <h1 id="test " class="bigText ">Projects</h2>
+        <div class="row">
+            <div class="col-md-12" id="certificatesHeader">
+                <h1 class="bigText">Certificates</h1>
             </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide w-50 p-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
 
-
-            <div class="col-md-8 ">
-
-
-
-                <img id="phoneSimulator " src="images/phoneHomeScreen.png " alt="Workplace " usemap="#workmap " width="420 " height="860 ">
-
-                <map name="workmap ">
-                   <area target=" " alt="Home " title="Home "
-                    coords="87,213,28,171 " shape="rect " onclick="changeScreen( 'phoneHomeScreen', 'phoneSimulator') ">
-
-                   <area target=" " alt="JogMode " title="JogMode "
-                    coords="148,214,89,170 " shape="rect " onclick="changeScreen( 'phoneJogModeScreen', 'phoneSimulator') ">
-
-                   <area target=" " alt="Parameters " title="Parameters "
-                    coords="151,170,212,213,176,194 " shape="0 " onclick="changeScreen( 'phoneParametersScreen', 'phoneSimulator') ">
-
-                   <area target=" " alt="Values " title="Values "
-                    coords="213,171,270,213,234,192 " shape="0 " onclick="changeScreen( 'phoneValuesScreen', 'phoneSimulator') ">
-
-                   <area target=" " alt="Chart " title="Chart "
-                    coords="273,172,328,212,306,201 " shape="0 " onclick="changeScreen( 'phoneChartScreen', 'phoneSimulator') ">
-
-                </map>
-            </div>
-
-            <div class="col-md-4 " id="phoneSimulatorText ">
-
-                <h2 id="pageName ">Plug & Drive Studio Mobile</h2>
-                <p id="pageText ">
-                    P&D Studio Mobile is a free software for easy commissioning and programming the Nanotec controllers, and tuning the motor. It accepts CAN operations from a server and depicts the motor response in a chart and appropriate value metrics.
-                </p>
-
-            </div>
-
-        </div> -->
-            <!--END PhoneSimulator Row-->
-
-            <!--MailzySimulator Row-->
-            <!-- <div class="row " id="newRow ">
-
-
-            <div class="col-md-4 " id="mailzySimulatorText ">
-
-                <h2 id="pageName ">Mailzy</h2>
-                <p>
-                    Mailzy is a program that is designed to receive, write, send, and keep your email messages. Mailzy use all popular protocols for retrieveing mail include POP3 and IMAP. Sending mail is usually done using the SMTP protocol.
-
-                </p>
-
-            </div>
-
-            <div class="col-md-8 ">
-
-
-
-                <img id="mailzySimulator " src="images/mailzyLoginScreen.png " usemap="#image-map ">
-
-                <map name="image-map ">
-                    <area target=" " alt="Login " title="Login " coords="115,477,306,437 " shape="rect "
-                    onclick="changeScreen( 'mailzyFirstEmailScreen', 'mailzySimulator') ">
-                    <area target="_blank " alt="Gmail " title="Gmail " href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&amp;flowEntry=SignUp " coords="156,632,193,605 " shape="rect ">
-                    <area target="_blank " alt="Outlook " title="Outlook " href="https://signup.live.com/signup?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1605431530&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d6232abe1-7179-e390-fb3a-69df332fbee2&amp;id=292841&amp;aadredir=1&amp;whr=outlook.com&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015&amp;contextid=F2BB7B8F0C32DC2D&amp;bk=1605431530&amp;uiflavor=web&amp;lic=1&amp;mkt=EN-US&amp;lc=1033&amp;uaid=a78e9ec3ea6d48ee86e626e3b6aa09e5
-                " coords="233,605,201,633 " shape="rect ">
-                    <area target="_blank " alt="ABV " title="ABV " href="https://passport.abv.bg/app/profiles/registration " coords="275,602,239,635 " shape="rect ">
-                </map>
-
-                <map name="image-map1 ">
-                  <area alt="Mailzy Testing " title="Mailzy Testing " coords="64,65,216,85 " 
-                  shape="rect " onclick="changeScreen( 'mailzyFirstEmailScreen', 'mailzySimulator') ">
-                  <area alt="Test email 1 " title="Test email 1 " coords="62,87,215,101 " 
-                  shape="rect " onclick="changeScreen( 'mailzySecondEmailScreen', 'mailzySimulator') ">
-                  <area alt="Your new website is waiti... " title="Your new website is waiti... " coords="64,104,216,117 " 
-                  shape="rect " onclick="changeScreen( 'mailzyThirdEmailScreen', 'mailzySimulator') ">
-                  <!--
-                  <area alt="New email " title="New email " coords="13,135,54,164 " 
-                  shape="rect " onclick="changeScreen( 'mailzyNewEmailScreen', 'mailzySimulator') ">
-                  -->
-            <!-- <area alt="Logout " title="Logout " coords="14,296,55,329 " 
-                  shape="rect " onclick="changeScreen( 'mailzyLoginScreen', 'mailzySimulator') ">
-              </map>
-
-            </div>
-
-
-
-        </div> -->
-            <!--END MailzySimulator Row-->
-
-            <!--SiteSimulator Row-->
-            <!-- <div class="row " id="newRow ">
-            <div class="col-md-8 ">
-
-
-                <embed id="siteSimulator " type="text/html " src="https://icemadafaka.github.io/worldofgaming.github.io/index.html ">
-
-
-            </div>
-
-            <div class="col-md-4 " id="siteSimulatorText ">
-
-                <h2 id="pageName ">World of gaming</h2>
-                <p id="pageText ">
-                    World of gaming is static web page build with HTML5, JavaScript, Bootstrap and jQuery.
-                </p>
-
-                <h2 id="pageName ">PHP Exam system</h2>
-                <p id="pageText ">
-                    World of gaming is static web page build with HTML5, JavaScript, Bootstrap and jQuery.
-                </p>
-
-            </div>
-
-        </div> -->
-            <!--END PhoneSimulator Row -->
-
-
-            <div id="id01">
-                <form class="modal-content animate" id="login-form" action="javascript:;" onsubmit="showLoginHide()">
-                    <div class="imgcontainer">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close">&times;</span>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/HackeRank.png" alt="First slide">
                     </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Adastra.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Softuni.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
 
+
+
+
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage " src="images/HackeRank.png " alt="Programer " style="width:100% ">
                     <div class="container">
-                        <div class="md-form mb-5">
-                            <label for="uname"><b class="login">User name</b></label>
-                            <input type="text" class="form-control input-sm" placeholder="User name" name="uname" required>
-                        </div>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="md-form mb-5">
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage " src="images/Adastra.png " alt="Adastra " style="width:100% ">
+                    <div class="container">
+                        <p>Adastra</p>
+                    </div>
+                </div>
+            </div>
 
-                            <label for="psw"><b class="login">Password</b></label>
-                            <input type="password" placeholder="Password" name="psw" autocomplete="new-password" class="form-control input-sm" required>
-                        </div>
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage " src="images/Softuni.png " alt="SoftUni " style="width:100% ">
+                    <div class="container ">
+                        <p>SoftUni</p>
+                    </div>
+                </div>
+            </div>
 
-                        <button class="btn btn-outline-success my-2 my-sm-0" onclick="showAlert()" type="submit">Login</button>
-                        <label class="login">
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage" src="images/System and Network Compromising.png " alt="SoftUni " style="width:100% ">
+                    <div class="container ">
+                        <p>SoftUni</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage " src="images/HackathonVarna.jpg " alt="SoftUni " style="width:100% ">
+                    <div class="container ">
+                        <p>Smart Solutions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage " src="images/Open Source Intelligence.png " alt="SoftUni " style="width:100% ">
+                    <div class="container ">
+                        <p>SoftUni</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 certificates">
+                <div class="polaroid ">
+                    <img class="certificateImage " src="images/Compromising Platforms.png " alt="SoftUni " style="width:100% ">
+                    <div class="container ">
+                        <p>SoftUni</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="id01">
+            <form class="modal-content animate" id="login-form" action="javascript:;" onsubmit="showLoginHide()">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close">&times;</span>
+                </div>
+
+                <div class="container">
+                    <div class="md-form mb-5">
+                        <label for="uname"><b class="login">User name</b></label>
+                        <input type="text" class="form-control input-sm" placeholder="User name" id="uname" required>
+                    </div>
+
+                    <div class="md-form mb-5">
+
+                        <label for="psw"><b class="login">Password</b></label>
+                        <input type="password" placeholder="Password" id="psw" autocomplete="new-password" class="form-control input-sm" required>
+                    </div>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" onclick="showAlert()" type="submit">Login</button>
+                    <label class="login">
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
-                    </div>
-                    <div class="container">
-                        <span class="psw login"><a onclick="showReg()" href="#">Register</a></span>
-                        <span class="psw login"><a onclick="pswForget()" href="#">Forgot password</a></span>
-                    </div>
-                </form>
-            </div>
-
-            <div id="id02">
-                <form class="modal-content animate" id="login-form" action="javascript:;" onsubmit="showProfileHide()">
-                    <div class="imgcontainer">
-                        <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close">&times;</span>
-                    </div>
-
-                    <div class="container">
-                        <div class="md-form mb-5">
-                            <label for="uname"><b class="login">Change user name</b></label>
-                            <input type="text" class="form-control input-sm" placeholder="Change user name" name="uname" required>
-                        </div>
-
-                        <div class="md-form mb-5">
-
-                            <label for="psw"><b class="login">Change password</b></label>
-                            <input type="password" placeholder="Change password" name="psw" autocomplete="new-password" class="form-control input-sm" required>
-                        </div>
-
-                        <button class="btn btn-outline-success my-2 my-sm-0" onclick="showAlert()" type="submit">Save</button>
-                    </div>
-                    <div class="container">
-                    </div>
-                </form>
-            </div>
-
+                </div>
+                <div class="container">
+                    <span class="psw login"><a onclick="showReg()" href="#">Register</a></span>
+                    <span class="psw login"><a onclick="pswForget()" href="#">Forgot password</a></span>
+                </div>
+            </form>
         </div>
 
+        <div id="id02">
+            <form class="modal-content animate" id="login-form1" action="javascript:;" onsubmit="showProfileHide()">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close">&times;</span>
+                </div>
+
+                <div class="container">
+                    <div class="md-form mb-5">
+                        <label for="uname"><b class="login">Change user name</b></label>
+                        <input type="text" class="form-control input-sm" placeholder="Change user name" name="uname" required>
+                    </div>
+
+                    <div class="md-form mb-5">
+
+                        <label for="psw"><b class="login">Change password</b></label>
+                        <input type="password" placeholder="Change password" name="psw" autocomplete="new-password" class="form-control input-sm" required>
+                    </div>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" onclick="showAlert()" type="submit">Save</button>
+                </div>
+                <div class="container">
+                </div>
+            </form>
+        </div>
+
+    </div>
 
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-        <script src="js/motus.js" defer></script>
-        <!-- jQuery first, then Bootstrap JS -->
-        <!-- CSS -->
-        <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" defer>
-        <!-- jQuery and JS bundle w/ Popper.js -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer>
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous " defer>
-        </script>
-        <!-- Personal JavaScript -->
-        <script src="js/main.js " defer></script>
-        <!-- Optional JavaScript -->
-        <script src="js/particles.js "></script>
-        <script src="js/jquery-3.2.1.min.js "></script>
-        <script src="js/bootstrap.min.js "></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="js/motus.js" defer></script>
+    <!-- jQuery first, then Bootstrap JS -->
+    <!-- CSS -->
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous" defer>
+    </script>
+    <!-- Personal JavaScript -->
+    <script src="js/main.js " defer></script>
+    <!-- Optional JavaScript -->
+    <script src="js/particles.js "></script>
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
 
 </body>
 
